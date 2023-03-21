@@ -157,6 +157,11 @@ footer{
 .footer li a:hover{
     color: rgb(212, 51, 105);
 }
+
+.footer.p{
+    text-align: left;
+}
+
 /*img footer*/
 /*.carrito.logocarrito{
     display: inline-block;
