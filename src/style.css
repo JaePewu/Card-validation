@@ -16,25 +16,20 @@ header{
     padding: 5px 10%;
 }
 
-.jaesStore .nav{
-    list-style: none;
+/*navegador*/
+
+nav {
+
 }
 
-.jaesStore .nav li{
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.jaesStore .nav li:hover{
-    transform: scale(1.1);
-}
-
-.jaesStore .nav a{
-    font-size: 700;
-    color: black;
-    text-decoration: none;
-}
-
-.jaesStore .nav a:hover{
-    color: rgb(212, 51, 105);
+.contenedor{
+    background: rgb(252, 249, 249);
+    align-items: baseline;
+    align-content: flex-start;
+    margin-left: auto;
+    height: 50%;
+    max-width: 500px;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    position: relative;
 }
