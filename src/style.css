@@ -17,6 +17,9 @@ header{
 }
 /*imagen logo*/
 img {
+    position: absolute;
+    left: 70px;
+    top: 18px;
     display: inline-block;
     justify-content: flex-start;
     size-adjust: 30px;
@@ -24,11 +27,20 @@ img {
     width: auto;
     transition: all 0.3;
     margin-right: auto;
-    border-radius: 20px
+    border-radius: 30px;
 }
 
 img:hover{
     transform: scale(1.2);
+}
+
+.nomLogo{
+    font-family: 'Copperplate', 'Papyrus', 'fantasy';
+    text-shadow: 4px 4px 7px rgb(224, 224, 224);
+    font-size: 30px;
+    display: inline-block;
+    vertical-align: top;
+    color:rgb(103, 61, 90);
 }
 
 /*navegador*/
