@@ -18,10 +18,27 @@ header{
 
 /*navegador*/
 
-nav {
-
+li {
+    text-align: -webkit-match-parent;
+    display: inline-block;
+    padding: 0 20px;
 }
 
+li:hover{
+    transform: scale(1.1);
+}
+
+a:-webkit-any-link {
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(212, 51, 105);
+}
+
+/*Contenedor de Tarjeta*/
 .contenedor{
     background: rgb(252, 249, 249);
     align-items: baseline;
@@ -32,4 +49,64 @@ nav {
     padding: 20px 20px 20px 20px;
     border-radius: 10px;
     position: relative;
+}
+/*Titulo de tarjeta*/
+h2{
+    font-family:unset;
+    font-size: 20px;
+    text-align:center;
+    color: rgb(26, 18, 18);
+}
+ 
+/*.flexbox{
+    border-radius: 30px;
+}*/
+
+.formularioTarjeta label{
+    display: block;
+    color:rgb(77, 50, 50);
+    margin-bottom: 5px;
+    font-size: 16px;
+    
+}
+
+.formularioTarjeta input,
+.formularioTarjeta select,
+.btn-validar{
+    border: 2px solid #CED6E0;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    height: 50px;
+    width: 100%;
+    transition: 0.3s ease all;
+}
+
+.formularioTarjeta input{
+    margin-bottom: 20px;
+}
+/*Cargp de tarjeta*/
+p{
+    font-size: 12px;
+    text-align: justify;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+/*Boton validador*/
+.btn-validar{
+    font-weight: 700;
+    color: rgb(68, 36, 36);
+    background: palevioletred;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.btn-validar:hover{
+    background-color: blueviolet;
+    color: antiquewhite;
+    transform: scale(1.1);
 }
