@@ -6,8 +6,193 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header>
+      <nav> 
+
+        <ul class="nav"> 
+    
+          <li><a href="index.html">Inicio</a></li> 
+    
+          <li><a href="">Tienda Virtual</a></li> 
+    
+          <li><a href="">Acerca de Nosotros</a></li> 
+    
+          <li><a href="">Contacto</a></li> 
+    
+        </ul> 
+    
+      </nav> 
+    </header>
+    <main>
+      <form class="formularioTarjeta"> 
+
+         
+
+        <div class="contenedor"> 
+  
+          <h2>Añadir Tarjeta</h2> 
+  
+   
+   
+  
+        <div class="grupoTarjeta"> 
+  
+          <label for="numeroTarjeta">Numero de Tarjeta (12 a 19 Digitos):</label> 
+  
+          <input type="text" class="numeroTarjeta" id="numeroTarjeta" name="numero" value="#### #### #### ####" required  
+  
+          minlength="13" maxlength="19" size="20" autocomplete="off"  
+  
+          onchange="myFunction()"> 
+  
+          </div> 
+  
+   
+   
+  
+        <div class="grupoTarjeta"> 
+  
+          <label for="nombreTitular">Nombre del Titular:</label> 
+  
+          <input type="text" class="nombreTitular" id="nombreTitular" name="letras" value="JAE DOE" size="20"  
+  
+          autocomplete="off" onchange="myFunction()"> 
+  
+   
+   
+  
+            <script> 
+  
+            function myFunction() { 
+  
+              var x = document.getElementById("nombreTitular"); 
+  
+              x.value = x.value.toUpperCase(); 
+  
+            } 
+  
+            </script> <!--coloque onchange para llamarlo desde java, pero no me funciono, 
+  
+            Hice un evento para llamarlo tambien de JS y nuevamente no lo logre, el test me tira error--> 
+  
+        </div> 
+  
+   
+   
+  
+        <div class="flexbox"> 
+  
+          <div class="grupoFecha"> 
+  
+            <label for="selecMes"></label> 
+  
+            <div class="flexbox"> 
+  
+              <div class="grupoSelect"> 
+  
+                <select name="mes" id="selectMes" class="mes"> 
+  
+                  <option disabled selected>Mes</option> 
+  
+                  <option class="1">Enero </option> 
+  
+                  <option class="2">Febrero </option> 
+  
+                  <option class="3">Marzo </option> 
+  
+                  <option class="4">Abril </option> 
+  
+                  <option class="5">Mayo </option> 
+  
+                  <option class="6">Junio </option> 
+  
+                  <option class="7">Julio </option> 
+  
+                  <option class="8">Agosto </option> 
+  
+                  <option class="9">Septiembre </option> 
+  
+                  <option class="10">Octubre </option> 
+  
+                  <option class="11">Noviembre </option> 
+  
+                  <option class="12">Diciembre </option> 
+  
+                </select> 
+  
+              </div> 
+  
+   
+   
+  
+              <div class="grupoSelect"> 
+  
+                <label for="slectAño"></label> 
+  
+                <select name="año" id="selectAño" class="año"> 
+  
+                  <option disabled selected>Año</option> 
+  
+                  <option class="2023">2023</option> 
+  
+                  <option class="2024">2024</option> 
+  
+                  <option class="2025">2025</option> 
+  
+                  <option class="2026">2026</option> 
+  
+                  <option class="2027">2027</option> 
+  
+                  <option class="2028">2028</option> 
+  
+                  <option class="2029">2029</option> 
+  
+                  <option class="2030">2030</option> 
+  
+                </select> 
+  
+              </div> 
+  
+            </div> 
+  
+          </div> 
+  
+        </div> 
+  
+        <div class="CVV"> 
+  
+          <label for="CVV">CVV</label> 
+  
+          <input type="text" id="CVV" value="###" size="3" maxlength="3" autocomplete="off"> 
+  
+        </div> 
+  
+   
+   
+  
+        <div> 
+  
+          <button type="submit" class="btn-validar">Validar</button> 
+  
+        </div> 
+  
+   
+   
+   
+  
+        <p> Tras añadir una tarjeta, se cargará en ella una cantidad pequeña (500 CLP$ o 0,61 US$, dependiendo del país emisor)  
+  
+          con el fin de verificarla. Se reembolsará en 1-7 días hábiles.</p> 
+  
+           
+  
+      </div> 
+  
+    </form> 
+  
+   
+  
+    </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
