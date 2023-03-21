@@ -29,8 +29,24 @@ const validator = {
     
   },
 
-  maskify: function (params) {
-    console.log(params)
+  maskify: function (numeroTarjeta) {
+
+    numeroTarjeta = numeroTarjeta.toString();
+    
+    let acumulador = "";
+  
+    for (let j = 0; j < numeroTarjeta.length; j++) {
+      
+      if (j > numeroTarjeta.length - 5) {
+        acumulador = acumulador + numeroTarjeta[j];
+        
+      }else{
+        acumulador = acumulador + "#"
+      }
+     
+    }
+    console.log(acumulador);
+    return acumulador;
   }
 
 }
