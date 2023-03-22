@@ -4,7 +4,7 @@ const validator = {
 
     const numeroTarj = numeroTarjeta.split("");
 
-    let sum;
+    let sum = "";
 
     const numTarjReves = numeroTarj;
 
@@ -12,21 +12,25 @@ const validator = {
 
     const numeroTarjnew = numTarjReves;
 
+    console.log(numeroTarjnew);
+
     for (let i = 1; i < numeroTarjnew.length; i = i + 2) {
 
       numeroTarjnew [i] = numeroTarjnew [i] * 2;
+
+      console.log(numeroTarjnew);
 
       if (numeroTarjnew [i] >= i) {
 
         numeroTarjnew[i] = (numeroTarjnew[i] % 10) + 1;
 
-      }
+      } 
 
       sum += parseInt(numeroTarjnew[i]);
-      console.log(sum);
+      console.log(sum)
       
     }
-    
+
   },
 
   maskify: function (numeroTarjeta) {
