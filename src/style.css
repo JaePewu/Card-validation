@@ -16,7 +16,7 @@ header{
     padding: 5px 10%;
 }
 /*imagen logo*/
-img {
+.logosakura {
     position: absolute;
     left: 70px;
     top: 18px;
@@ -30,7 +30,7 @@ img {
     border-radius: 30px;
 }
 
-img:hover{
+.logosakura:hover{
     transform: scale(1.2);
 }
 
@@ -64,6 +64,18 @@ a:-webkit-any-link {
 a:hover{
     color: rgb(212, 51, 105);
 }
+
+/*img de gracias*/
+.gracias{
+    float: left;
+    margin-top: 50px;
+    margin-right: 100px;
+    justify-content: flex-start;
+    size-adjust: 500px;
+    height: 500px;
+    border-radius: 30px;
+}
+
 
 /*Contenedor de Tarjeta*/
 .contenedor{
