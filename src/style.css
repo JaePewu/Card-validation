@@ -45,6 +45,14 @@ header{
 
 /*navegador*/
 
+.buscador{
+    border: 2px solid #d19ee4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 30px;
+    width: 400px;
+    border-radius: 20px;
+}
+
 li {
     text-align: -webkit-match-parent;
     display: inline-block;
