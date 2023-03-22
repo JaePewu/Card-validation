@@ -47,8 +47,8 @@ const validator = {
       }
      
     }
-    console.log(acumulador);
-    return acumulador;
+    console.log(maski);
+    return maski;
   }
 
 }
