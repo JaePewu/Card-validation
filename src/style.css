@@ -187,6 +187,8 @@ p{
 footer{
     background-color: rgb(212, 135, 161);
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
     justify-content:flex-start;
     align-items: center;
     height: 80px;
@@ -215,14 +217,7 @@ footer{
 }
 
 .footer.derechos{
-    text-align: left;
+    display: inline;
 }
 
-/*img footer*/
-/*.carrito.logocarrito{
-    display: inline-block;
-    height: 30px;
-    width: 5px;
-    transition: all 0.3;
-    margin-right: auto;
-}*/
+
