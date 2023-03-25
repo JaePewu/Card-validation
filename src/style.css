@@ -57,7 +57,7 @@ header{
     border: 2px solid #d19ee4;
     font-family: Georgia, 'Times New Roman', Times, serif;
     height: 30px;
-    width: 400px;
+    width: 300px;
     border-radius: 20px;
 }
 
@@ -94,11 +94,12 @@ form{
     padding: 10px 40px 10px 40px;
 }
 
-/*img de gracias*/
+/*contenedor de img y tarjeta*/
 .contenedor1{
     display: inline-flex;
+    justify-content: space-between;
 }
-
+/*img de gracias*/
 .gracias{
     float: left;
     margin-top: 50px;

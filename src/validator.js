@@ -1,34 +1,43 @@
 const validator = {
-
   isValid: function (numeroTarjeta) {
+    console.log(numeroTarjeta);
 
     const numeroTarj = numeroTarjeta.split("");
+    console.log(numeroTarj);
 
-    let sum;
+    const numTarj = numeroTarj.reverse();
+    console.log(numTarj);
 
-    const numTarjReves = numeroTarj;
+    let suma = 0;
+    
+    for (let i = 0; i < numTarj.length; i++) {
 
-    numTarjReves.reverse();
+      numTarj[i] = parseInt(numTarj[i]) ;
+      console.log(numTarj);
+      //tambien puede ser i%2!==0 indicando que es lo contrario
+      if (i % 2 === 0){
 
-    const numeroTarjnew = numTarjReves;
-
-    for (let i = 1; i < numeroTarjnew.length; i = i + 2) {
-
-      numeroTarjnew [i] = numeroTarjnew [i] * 2;
-      console.log(numeroTarjnew);
-      if (numeroTarjnew [i] >= i) {
-
-        numeroTarjnew[i] = (numeroTarjnew[i] % 10) + 1;
-
-        console.log(numeroTarjnew);
+        numeroTarj[i] = numeroTarj[i] * 1
+        console.log(numTarj);
+      } else {
+        numeroTarj[i] = numeroTarj[i] * 2 
+        console.log(numTarj);
 
       }
-
-      //sum += parseInt(numeroTarjnew[i]);
-      //console.log(sum);
       
+      if (numeroTarj[i] >= 10) {
+
+        numeroTarj[i] = (numeroTarj[i] % 10) + 1;
+        console.log(numTarj);
+      } 
+      suma += numeroTarj[i];
+      console.log(suma);
+    } 
+    if (suma % 10 === 0) {
+      return true
+    }else{
+      return false
     }
-    
   },
 
   maskify: function (numeroTarjeta) {
@@ -36,23 +45,21 @@ const validator = {
     numeroTarjeta = numeroTarjeta.toString();
 
     let maski = "";
-  
+
     for (let j = 0; j < numeroTarjeta.length; j++) {
-      
+     
       if (j > numeroTarjeta.length - 5) {
-        maski = maski + numeroTarjeta[j];
         
+        maski = maski + numeroTarjeta[j]
+
       }else{
         maski = maski + "#"
       }
-     
+      
     }
     console.log(maski);
-    return maski;
+    return maski
   }
-
 }
-
-
 
 export default validator;

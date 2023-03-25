@@ -26,13 +26,13 @@
           </div>
 
           <div class="link">
-          <li><a href="index.html">Inicio</a></li> 
+          <li><a href="index.html">🏵 Inicio</a></li> 
     
-          <li><a href="">Tienda Virtual</a></li> 
+          <li><a href="">🏵 Tienda Virtual</a></li> 
     
-          <li><a href="">Acerca de Nosotros</a></li> 
+          <li><a href="">🏵 Acerca de Nosotros</a></li> 
     
-          <li><a href="">Contacto</a></li> 
+          <li><a href="">🏵 Contacto</a></li> 
         </div>
 
         </ul> 
@@ -66,11 +66,8 @@
   
           <label for="numeroTarjeta">Numero de Tarjeta (12 a 19 Digitos):</label> 
   
-          <input type="text" class="numeroTarjeta" id="numeroTarjeta" name="numero" value="#### #### #### ####" required  
-  
-          minlength="13" maxlength="19" size="20" autocomplete="off"  
-  
-          onchange="myFunction()"> 
+          <input type="text" class="numeroTarjeta" id="numeroTarjeta" name="numero" value="#### #### #### ####" 
+          pattern="^[0-9]+$"  minlength="13" maxlength="19" size="20" autocomplete="off" required> 
   
           </div> 
   
@@ -83,7 +80,7 @@
   
           <input type="text" class="nombreTitular" id="nombreTitular" name="letras" value="JAE DOE" size="20"  
   
-          autocomplete="off" onchange="myFunction()"> 
+          autocomplete="off" pattern="[A-Z]+" onchange="myFunction()" required> 
   
   
             <script> 
@@ -219,11 +216,11 @@
   
     </main>
     <footer>
-      <li><a href="">Redes Sociales</a></li>
-      <li><a href="">Contacto</a></li>
+      <li><a href="">🏵 Redes Sociales</a></li>
+      <li><a href="">🏵 Contacto</a></li>
 
       <p class="derechos">
-        <i> ©  Derechos reservados por Jae-pewu.</i>
+        <i> ©2023   Derechos reservados por 🏵Jae-pewu.</i>
       </p>
 
       <!--<div class="carrito">
