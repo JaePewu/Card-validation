@@ -44,12 +44,12 @@
 
       <div class="contenedor1">
 
-      <form class="imagGracias">
+      <!--<form class="imagGracias">
 
 
         <img class="gracias" src="https://raw.githubusercontent.com/JaePewu/Card-validation/main/logo/gracias.png" >
 
-    </form>
+    </form>-->
 
       <form class="formularioTarjeta"> 
 
@@ -67,7 +67,7 @@
           <label for="numeroTarjeta">Numero de Tarjeta (12 a 19 Digitos):</label> 
   
           <input type="text" class="numeroTarjeta" id="numeroTarjeta" name="numero" value="#### #### #### ####" 
-          pattern="^[0-9]+$"  minlength="13" maxlength="19" size="20" autocomplete="off" required> 
+          pattern="[0-9]*\.?[0-9]*"  minlength="13" maxlength="19" size="20" autocomplete="off" required> 
   
           </div> 
   
@@ -80,7 +80,7 @@
   
           <input type="text" class="nombreTitular" id="nombreTitular" name="letras" value="JAE DOE" size="20"  
   
-          autocomplete="off" pattern="[A-Z]+" onchange="myFunction()" required> 
+          autocomplete="off" onchange="myFunction()" required> 
   
   
             <script> 
@@ -92,7 +92,9 @@
               x.value = x.value.toUpperCase(); 
   
             } 
-  
+
+            //toUpperCase funcion que sirve para volver en mayusculas las minusculas
+
             </script> 
   
   
@@ -184,7 +186,7 @@
   
           <label for="CVV">CVV</label> 
   
-          <input type="text" id="CVV" value="###" size="3" maxlength="3" autocomplete="off"> 
+          <input type="text" id="CVV" value="###" size="3" maxlength="3" autocomplete="off" pattern="[0-9]*\.?[0-9]*" required> 
   
         </div> 
   
@@ -193,7 +195,7 @@
   
         <div> 
   
-          <button type="submit" class="btn-validar">Validar</button> 
+          <button type="submit" class="btn-validar" id="btnValidar">Validar</button> 
   
         </div> 
   
