@@ -41,7 +41,6 @@ const validator = {
       console.log(suma);
     } 
     if (suma % 10 === 0) {
-      alert ("¡Felicidades por Tu Compra!");
       return true
     }else{
       alert ("ERROR: Número de tarjeta NO Valida")

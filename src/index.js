@@ -1,30 +1,38 @@
 import validator from './validator.js';
-//validator.isValid("123456789");
-//validator.maskify("123456789");
 
 const numeroTarjeta = document.getElementById("numeroTarjeta");
-
 
 document.getElementById("btnValidar").onclick = function() {
 
   const numeroTarj = numeroTarjeta.value;
-  //const signosLetras = "/^[0-9]+$/";
 
-  //debe tener un min de 13 y un max de 19
+  //Debe tener un min de 13 y un max de 19
   if (numeroTarj.length < 13 || numeroTarj.length > 19) {
 
-    alert ("¡ERROR!: El número de tarjeta debe contener entre 12 a 19 digitos");
+    alert ("¡ERROR!: El número de tarjeta debe contener entre 13 a 19 digitos");
     console.log(numeroTarjeta);
     return false
-  }else{
-    /*if (){ 
+  }
+
+  //Validacion si es o no digito
+  const sigLetras = /^\d+$/.test(numeroTarj);
+  
+  if(sigLetras !== true){ 
     alert ("¡SOLO debe poseer digitos de 0 a 9!");
-    return false
-  }*/const resultado = validator.isValid(numeroTarjeta.value); console.log(resultado)}
+    return false;
+  }
+  
+  //Algoritmo de Luhn, isValid
+  const resultado = validator.isValid(numeroTarjeta.value); 
+  console.log(resultado);
 
-};
+  //Maskify
+  const maski = validator.maskify(numeroTarjeta.value);
+  if (resultado === true){
+    numeroTarjeta.value = maski;
+    alert ("¡Felicidades por Tu Compra! Se verificó tu tarjeta N°"+ maski);
+  }
 
-//document.getElementById("btnValidar").onclick = function() {validator.maskify(numeroTarjeta.value)}; 
-// valida el maskify ^^^
+}
 
 console.log(validator)
