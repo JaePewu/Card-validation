@@ -44,12 +44,12 @@
 
       <div class="contenedor1">
 
-      <!--<form class="imagGracias">
+      <form class="imagGracias">
 
 
         <img class="gracias" src="https://raw.githubusercontent.com/JaePewu/Card-validation/main/logo/gracias.png" >
 
-    </form>-->
+    </form>
 
       <form class="formularioTarjeta"> 
 
@@ -67,7 +67,7 @@
           <label for="numeroTarjeta">Numero de Tarjeta (13 a 19 Digitos):</label> 
   
           <input type="text" class="numeroTarjeta" id="numeroTarjeta" name="numero" value="#### #### #### ####" 
-          <!pattern="[0-9]*\.?[0-9]*"  <!minlength="13"  <!maxlength="19" size="20" autocomplete="off" required> 
+          pattern="[0-9]*\.?[0-9]*"  minlength="13"  <!maxlength="19" size="20" autocomplete="off" required> 
   
           </div> 
   
@@ -80,7 +80,7 @@
   
           <input type="text" class="nombreTitular" id="nombreTitular" name="letras" value="JAE DOE" size="20"  
   
-          autocomplete="off" onchange="myFunction()" required> 
+          autocomplete="off" onchange="myFunction()" pattern="^[a-zA-Z]+$" required> 
   
   
             <script> 
