@@ -1,5 +1,5 @@
 import validator from './validator.js';
-
+//llamada del elemento en html por Id
 const numeroTarjeta = document.getElementById("numeroTarjeta");
 
 document.getElementById("btnValidar").onclick = function() {
@@ -32,7 +32,7 @@ document.getElementById("btnValidar").onclick = function() {
     numeroTarjeta.value = maski;
     alert ("¡Felicidades por Tu Compra! Se verificó tu tarjeta N°"+ maski);
   }
-
+  
 }
 
 console.log(validator)
