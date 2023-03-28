@@ -4,14 +4,14 @@
 
 **Tabla de contenidos**
 
-* [Caracteristicas](#Caracteristicas)
 * [Algoritmo de Luhn para Jae's Store](#Algoritmo-de-Luhn-para-Jae's-Store)
+* [Caracteristicas](#Caracteristicas)
 * [Qué es el Algoritmo de Luhn](#Qué-es-el-Algoritmo-de-Luhn)
 * [Cómo funciona el algoritmo de Luhn](#Cómo-funciona-el-algoritmo-de-Luhn)
 * [Cómo se utiliza el algoritmo en Jae's Store](#Cómo-se-utiliza-el-algoritmo-en-Jae's-Store)
 * [Implementación del algoritmo en Jae's Store](#Implementación-del-algoritmo-en-Jae's-Store)
 * [Referencias](#Referencias)
-* [8. Pistas, tips y lecturas complementarias](#8-pistas-tips-y-lecturas-complementarias)
+* [Caracteristicas Finales:](#Caracteristicas-Finales:)
 * [Links](#Links)
 
 ***
