@@ -15,24 +15,41 @@ document.getElementById("btnValidar").onclick = function() {
   }
 
   //Validacion si es o no digito
-  const sigLetras = /^\d+$/.test(numeroTarj);
+  const sigLtrs = /^\d+$/.test(numeroTarj);
   
-  if(sigLetras !== true){ 
+  if(sigLtrs !== true){ 
     alert ("¡SOLO debe poseer digitos de 0 a 9!");
     return false;
   }
   
+
   //Algoritmo de Luhn, isValid
   const resultado = validator.isValid(numeroTarjeta.value); 
   console.log(resultado);
+
+
 
   //Maskify
   const maski = validator.maskify(numeroTarjeta.value);
   if (resultado === true){
     numeroTarjeta.value = maski;
+
     alert ("¡Felicidades por Tu Compra! Se verificó tu tarjeta N°"+ maski);
   }
   
+  //Prueba de modal
+/* const open = document.getElementById('btn-validar');
+  const mnsjValidacion = document.getElementById('mnsjValidacion');
+  const close = document.getElementById('cerrar');
+
+  open.addEventListener('onclick', () => {
+    mnsjValidacion.classList.add('show');  
+  });
+
+  close.addEventListener('onclick', () => {
+    mnsjValidacion.classList.remove('show');
+  });*/
 }
+
 
 console.log(validator)
