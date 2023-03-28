@@ -24,7 +24,7 @@
 
 
 
-# Uso del Algoritmo
+## Uso del Algoritmo
 
 El algoritmo de Luhn es un algoritmo utilizado para validar números
  de tarjetas de crédito y débito. JAE's Store ha implementado este 
@@ -74,11 +74,12 @@ números de tarjeta de crédito/débito que los clientes utilizan para
 ## Implementación del algoritmo en Jae's Store
 
 En Jae's Store, el algoritmo de Luhn se implementó en el backend 
-de la aplicación web. Cuando un cliente intenta realizar una compra, 
-el número de tarjeta de crédito/débito se valida utilizando el 
-algoritmo de Luhn. Si el número de tarjeta de crédito/débito no es 
-válido, se muestra un mensaje de error y se le pide al cliente que
- proporcione un número de tarjeta de crédito/débito válido.
+de la aplicación web, mediante un formulario antes de que la compra se 
+esté por realizar. Cuando un cliente intenta realizar una compra, el número 
+de tarjeta solo se validara utilizando netamente el algoritmo de Luhn, también 
+se daran alertas si el cliente intenta ingresar, signos o letras, donde solo deberían ir solo dígitos. Si el número de tarjeta de NO es válido, se muestra 
+un mensaje de alerta y se le pide al cliente que proporcione un número de tarjeta
+válido, devolviendo de manera inmediata al formulario.
 
 ## Referencias
 
