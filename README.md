@@ -1,4 +1,4 @@
-### Caracteristicas :tw-1f338:
+### Caracteristicas 🏵
 
 - Proyecto algoritmo de Luhn.
 - Dev006 para Laboratoria.
@@ -6,7 +6,7 @@
 
 # Algoritmo de Luhn para Jae's Store🏵
 
-![](https://img.freepik.com/premium-vector/cherry-blossom-icon-vector-sakura-illustration_197792-811.jpg?size=338&ext=jpg&ga=GA1.2.1197920500.1679959569&semt=ais)
+![](https://img.freepik.com/premium-vector/beautiful-pink-sakura-cherry-blossom-illustration_315337-13082.jpg)
 
 
 
