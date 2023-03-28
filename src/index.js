@@ -1,6 +1,13 @@
 import validator from './validator.js';
+
 //llamada del elemento en html por Id
 const numeroTarjeta = document.getElementById("numeroTarjeta");
+
+//llamada para Modal
+const mnsjValidacion = document.getElementById('mnsjValidacion');
+const msj = document.getElementById('msj');
+const close = document.getElementById('btnCerrar');
+
 
 document.getElementById("btnValidar").onclick = function() {
 
@@ -32,24 +39,20 @@ document.getElementById("btnValidar").onclick = function() {
   //Maskify
   const maski = validator.maskify(numeroTarjeta.value);
   if (resultado === true){
-    numeroTarjeta.value = maski;
+    //se mostrara en formulario n° tarjeta el maskify
+    //mensaje interno de modal
+    msj.innerHTML = "Se verificó tu tarjeta N°" + maski;
 
-    alert ("¡Felicidades por Tu Compra! Se verificó tu tarjeta N°"+ maski);
-  }
-  
-  //Prueba de modal
-/* const open = document.getElementById('btn-validar');
-  const mnsjValidacion = document.getElementById('mnsjValidacion');
-  const close = document.getElementById('cerrar');
-
-  open.addEventListener('onclick', () => {
+    //alerta a traves de modal
     mnsjValidacion.classList.add('show');  
-  });
 
-  close.addEventListener('onclick', () => {
-    mnsjValidacion.classList.remove('show');
-  });*/
+  }
+
 }
+//boton de modal
+close.addEventListener('click', () => {
+  mnsjValidacion.classList.remove('show');
+});
 
 
 console.log(validator)
