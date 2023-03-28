@@ -137,6 +137,8 @@ válido, se muestra un mensaje de error y se le pide al cliente que
 
 [Youtube. Algoritmo de Luhn, por Laboratoria](https://www.youtube.com/watch?v=f0zL6Ot9y_w")
 
+[Laboratoria, proyecto Card Validaton ](https://github.com/Laboratoria/DEV006-card-validation)
+
 ------------
 
 
