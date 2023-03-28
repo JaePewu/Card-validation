@@ -11,7 +11,7 @@
 * [Cómo se utiliza el algoritmo en Jae's Store](#Cómo-se-utiliza-el-algoritmo-en-Jae's-Store)
 * [Implementación del algoritmo en Jae's Store](#Implementación-del-algoritmo-en-Jae's-Store)
 * [Referencias](#Referencias)
-* [Caracteristicas Finales:](#Caracteristicas-Finales:)
+* [Caracteristicas Finales:](#Caracteristicas-Finales)
 * [Links](#Links)
 
 ***
