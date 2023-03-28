@@ -101,18 +101,19 @@ válido, se muestra un mensaje de error y se le pide al cliente que
 
 ### Diseño de producto
 
-* [ ] Tiene una interfaz que permite a la usuaria saber si la tarjeta es valido
+* [ ] Tiene una interfaz que permite a la usuaria saber si la tarjeta es valida.
   y ocultar el numero hasta las 4 ultimos digitos.
-* [ ] Incluyendo pruebas unitarias de los métodos de `validator` (`isValid` y `maskify`).
-* [ ] El proyecto será entregado libre de _errores_ de `eslint` (_warnings_ son ok).
-* [ ] El proyecto será entregado subiendo tu código a GitHub.
-* [ ] La interfaz será "desplegada" usando GitHub Pages.
-* [ ] El README contiene una definición del producto.
+* [ ] El proyecto esta entregado libre de _errores_ de `eslint` (_warnings_ son ok).
+* [ ] El proyecto se encontrara en GitHub.
+* [ ] Incluye pruebas unitarias de los métodos de `validator` (`isValid` y `maskify`).
 
-  - `validator.isValid(creditCardNumber)`: `creditCardNumber` es un `string`
+
+
+  - `isValid`: `creditCardNumber` es un `string`
      con el número de tarjeta que se va a verificar. Esta función debe retornar
-     un `boolean` dependiendo si es válida de acuerdo al [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn).
-  - `validator.maskify(creditCardNumber)`: `creditCardNumber` es un `string` con
+     un `boolean` dependiendo si es válida de acuerdo al algoritmo de Luhn.
+
+  - `maskify`: `creditCardNumber` es un `string` con
     el número de tarjeta y esta función debe retornar un `string` donde todos menos
     los últimos cuatro caracteres sean reemplazados por un numeral (`#`) o 🐱.
     Esta función deberá siempre mantener los últimos cuatro caracteres
