@@ -209,7 +209,9 @@ p{
   }
 /*Boton modal*/
 
-/*.btnCerrar{
+#btnCerrar{
+    font-weight: 700;
+    font-size: 18px;
     color: rgb(68, 36, 36);
     background: palevioletred;
     border: none;
@@ -217,11 +219,11 @@ p{
     cursor: pointer;
 }
 
-.btnCerrar:hover{
+#btnCerrar:hover{
     background-color: blueviolet;
     color: antiquewhite;
     transform: scale(1.1);
-  }*/
+  }
   
   .show {
     pointer-events: auto;
