@@ -53,11 +53,11 @@ la suma de sus dígitos finales es un múltiplo de 10.
 
 1. Se toma el número de la tarjeta de crédito/débito.
 
-2. Se multiplica por 2 cada segundo dígito, empezando por el penúltimo dígito y se suman los dígitos de los resultados obtenidos.
+2. Se dará vuelta el número de tarjeta.
 
-3. Se suman los dígitos restantes de la tarjeta de crédito/débito que no fueron multiplicados.
+3. Cada digito par se multiplicara por 2, si este número es mayor o igual a 10, debemos sumar cada uno de sus digitos.
 
-4. Se suman los resultados obtenidos en los pasos 2 y 3.
+4. Junto con el paso 3, se suman los dígitos restantes del número de tarjeta que no fueron multiplicados por 2.
 
 5. Si el resultado de la suma es un número múltiplo de 10, la tarjeta de crédito/débito es válida. Si no, la tarjeta es inválida.
 
