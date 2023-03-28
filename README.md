@@ -75,9 +75,9 @@ números de tarjeta de crédito/débito que los clientes utilizan para
 
 En Jae's Store, el algoritmo de Luhn se implementó en el backend 
 de la aplicación web, mediante un formulario antes de que la compra se 
-esté por realizar. Cuando un cliente intenta realizar una compra, el número 
-de tarjeta solo se validara utilizando netamente el algoritmo de Luhn, también 
-se daran alertas si el cliente intenta ingresar, signos o letras, donde solo deberían ir solo dígitos. Si el número de tarjeta de NO es válido, se muestra 
+esté por realizar. Cuando un cliente intenta realizar una compra, debe ingresar los datos
+de su tarjeta. El número de tarjeta se validara utilizando el algoritmo de Luhn. También 
+se daran alertas si el cliente intenta ingresar signos, letras o espacios en blanco, donde solo deberían ir dígitos. Si el número de tarjeta de NO es válido, se muestra 
 un mensaje de alerta y se le pide al cliente que proporcione un número de tarjeta
 válido, devolviendo de manera inmediata al formulario.
 
