@@ -12,10 +12,6 @@
 
 **Tabla de contenidos**
 
-[TOCM]
-
-[TOC]
-
 # Uso del Algoritmo
 
 El algoritmo de Luhn es un algoritmo utilizado para validar números
@@ -54,6 +50,7 @@ de Luhn. Si el número de tarjeta de crédito/débito no es válido, se
  un número de tarjeta de crédito/débito válido.
 
 ## Referencias
+
 - Para más información sobre el algoritmo de Luhn, puedes consultar los siguientes enlaces:
 
 
