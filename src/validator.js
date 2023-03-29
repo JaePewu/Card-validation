@@ -65,16 +65,16 @@ const validator = {
 
     for (let j = 0; j < numeroTarjeta.length; j++) {
   
-      if (j > numeroTarjeta.length - 5) {//j es mayor que la longitud - 5, entonces el carácter actual no se enmascara y se sumara a maski
+      if (j > numeroTarjeta.length - 5) {//se enmascara todos los digitos menos los ultimos 4, pero para que se refleje correctamente se coloca -5
         
-        maski = maski + numeroTarjeta[j]
+        maski = maski + numeroTarjeta[j]//entonces se sumara a maski
 
-      }else{//Si no, se reemplaza el carácter actual con un "#"
+      }else{//Si no esta dentro de los ultimos 4 = (- 5), se reemplazara con un "#"
         maski = maski + "#"
       }
       
     }
-    console.log(maski);//función devuelve la cadena resultante maski.
+    console.log(maski);//función devuelve la cadena resultante  maski. (el maski es todo)
     return maski
   }
 }
