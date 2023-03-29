@@ -59,22 +59,22 @@ const validator = {
   //Funcion ocultara los primeros digitos, dejando libre los ultimos 4.
   maskify: function (numeroTarjeta) {
 
-    numeroTarjeta = numeroTarjeta.toString();
+    numeroTarjeta = numeroTarjeta.toString(); //convierte el número de tarjeta en una cadena de caracteres 
 
-    let maski = "";
+    let maski = "";//variable vacia
 
     for (let j = 0; j < numeroTarjeta.length; j++) {
-     
-      if (j > numeroTarjeta.length - 5) {
+  
+      if (j > numeroTarjeta.length - 5) {//j es mayor que la longitud - 5, entonces el carácter actual no se enmascara y se sumara a maski
         
         maski = maski + numeroTarjeta[j]
 
-      }else{
+      }else{//Si no, se reemplaza el carácter actual con un "#"
         maski = maski + "#"
       }
       
     }
-    console.log(maski);
+    console.log(maski);//función devuelve la cadena resultante maski.
     return maski
   }
 }
