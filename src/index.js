@@ -68,12 +68,12 @@ document.getElementById("btnValidar").onclick = function() {
   const numeroTarj = numeroTarjeta.value;
 
   //Debe tener un min de 13 y un max de 19
-  /* if (numeroTarj.length < 13 || numeroTarj.length > 19) {
+  if (numeroTarj.length < 13 || numeroTarj.length > 19) {
 
     alert("¡ERROR!: El número de tarjeta debe contener entre 13 a 19 digitos");
     console.log(numeroTarjeta);
     return false;
-  }*/
+  }
 
   //Validacion si es o no digito
   const sigLtrs = /^\d+$/.test(numeroTarj);
