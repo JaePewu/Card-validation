@@ -47,13 +47,14 @@ const validator = {
     } 
     if (suma % 10 === 0) {
       //Si el resto de 10 es igual a 0
-      return true
+      return true;
       //Es TRUE si el valor corresponde al LUHN, termina con un digito 0, o en decena
     }else{
-      alert ("ERROR: Número de tarjeta NO Valida")
-      return false
+      //alert("ERROR: Número de tarjeta NO Valida");
+      return false;
       //si no saldra un alerta ya que no cumple con lo antes nombrado
     }
+    
   },
 
   //Funcion ocultara los primeros digitos, dejando libre los ultimos 4.

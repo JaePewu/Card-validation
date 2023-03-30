@@ -3,23 +3,77 @@ import validator from './validator.js';
 //llamada del elemento en html por Id
 const numeroTarjeta = document.getElementById("numeroTarjeta");
 
+
 //llamada para Modal
 const mnsjValidacion = document.getElementById('mnsjValidacion');
 const msj = document.getElementById('msj');
 const close = document.getElementById('btnCerrar');
 
 
+const inputNombre = document.getElementById("nombreTitular");
+
+
+inputNombre.addEventListener("input", function() {
+  console.log("entro")
+  const valor = this.value;
+  console.log(valor)
+  this.value = valor.replace(/[0-9]/g, "");
+  console.log(valor)
+});
+
+/*function soloLetras(event){
+
+  const input = event.target.value;
+  const re = /^[a-zA-Z\s]+$/;
+  if(!re.test(input)){
+    event.preventDefault(); // Evita que el caracter se escriba en el campo
+    return false;
+  }
+  return true;
+}*/
+//evitar signos en el nombre
+/*const nombreTitular = document.getElementById("nombreTitular");
+const ltrSpace = /^[a-zA-Z\s]+$/;
+console.log(nombreTitular.value);
+
+nombreTitular.addEventListener('keyup', () => {
+  console.log("Entró!")
+  const nombTitu = nombreTitular.value;
+
+  if(!ltrSpace.test(nombTitu)){
+    const nombremenos =nombTitu.substring(0, nombTitu.Length -1);
+    nombreTitular.value = nombremenos;
+    //alert("Cuidado, solo debes ingresar tu nombre sin signos, ni números")
+    console.log(nombTitu);
+    return true;
+  }
+});*/
+
+
+
+
+/*document.getElementsByName("letras").onkeydown = function(){
+  console.log("Entró!")
+  const nombTitu = nombreTitular.value;
+
+  if(ltrSpace.test(nombTitu)){
+    alert("Cuidado, solo debes ingresar tu nombre sin signos, ni números")
+    console.log(nombTitu);
+    return true;
+  }
+}*/
+
 document.getElementById("btnValidar").onclick = function() {
 
   const numeroTarj = numeroTarjeta.value;
 
   //Debe tener un min de 13 y un max de 19
-  if (numeroTarj.length < 13 || numeroTarj.length > 19) {
+  /* if (numeroTarj.length < 13 || numeroTarj.length > 19) {
 
-    alert ("¡ERROR!: El número de tarjeta debe contener entre 13 a 19 digitos");
+    alert("¡ERROR!: El número de tarjeta debe contener entre 13 a 19 digitos");
     console.log(numeroTarjeta);
-    return false
-  }
+    return false;
+  }*/
 
   //Validacion si es o no digito
   const sigLtrs = /^\d+$/.test(numeroTarj);
@@ -46,7 +100,7 @@ document.getElementById("btnValidar").onclick = function() {
     //alerta a traves de modal
     mnsjValidacion.classList.add('show');  
 
-  }
+  }else{alert('mensaje prueba '+ resultado)}
 
 }
 //boton de modal
