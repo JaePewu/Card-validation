@@ -67,7 +67,7 @@
           <label for="numeroTarjeta">Numero de Tarjeta (13 a 19 Digitos):</label> 
   
           <input type="text" class="numeroTarjeta" id="numeroTarjeta" name="numero" value="#### #### #### ####" 
-          pattern="[0-9]*\.?[0-9]*"  minlength="13"  <!maxlength="19" size="20" autocomplete="off" required> 
+          pattern="[0-9]*\.?[0-9]*"  <!minlength="13"  <!maxlength="19" size="20" autocomplete="off" required> 
   
           </div> 
   
@@ -80,7 +80,7 @@
   
           <input type="text" class="nombreTitular" id="nombreTitular" name="letras" value="JAE DOE" size="20"  
   
-          autocomplete="off" onchange="myFunction()" <!pattern="" required> 
+          autocomplete="off" onchange="myFunction()" pattern="^[a-zA-Z\s]+$" required> 
   
   
             <script> 
@@ -186,7 +186,7 @@
   
           <label for="CVV">CVV</label> 
   
-          <input type="text" id="CVV" value="###" size="3" maxlength="3" autocomplete="off" pattern="[0-9]*\.?[0-9]*" required> 
+          <input type="text" id="CVV" value="###" size="3" maxlength="3" autocomplete="off" pattern="[0-9]*\.?[0-9]*" required > 
   
         </div> 
   
@@ -195,7 +195,7 @@
   
         <div> 
   
-          <button type="submit" class="btn-validar" id="btnValidar">Validar</button> 
+          <button type="button" class="btn-validar" id="btnValidar">Validar</button> 
   
         </div> 
 
