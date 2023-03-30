@@ -19,7 +19,7 @@ inputNombre.addEventListener("input", function() {
   console.log("entro")
   const valor = this.value;//this" es una palabra clave para referirse al objeto actual en el que se está ejecutando.
   console.log(valor) //se refiere al elemento del DOM en el que se ha producido el evento "input" (es decir, el elemento con el id "nombreTitular").
-  this.value = valor.replace(/[0-9]/g, "");
+  this.value = valor.replace(/[^\p{L}\s]/gu, "");// Quita numero, digitos----- /[0-9\W_]/g, """ <- \W  no alfanumérico (incluye el espaciado)
   console.log(valor)
 });
 
