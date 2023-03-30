@@ -50,7 +50,7 @@ const validator = {
       return true;
       //Es TRUE si el valor corresponde al LUHN, termina con un digito 0, o en decena
     }else{
-      //alert("ERROR: Número de tarjeta NO Valida");
+
       return false;
       //si no saldra un alerta ya que no cumple con lo antes nombrado
     }

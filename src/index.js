@@ -6,12 +6,14 @@ const numeroTarjeta = document.getElementById("numeroTarjeta");
 
 //llamada para Modal
 const mnsjValidacion = document.getElementById('mnsjValidacion');
+const msjH1 = document.getElementById('msjH1');
 const msj = document.getElementById('msj');
 const close = document.getElementById('btnCerrar');
 
 
-const inputNombre = document.getElementById("nombreTitular");
 
+//Validacion de numeros o signos en Nombre 
+const inputNombre = document.getElementById("nombreTitular");
 
 inputNombre.addEventListener("input", function() {
   console.log("entro")
@@ -21,37 +23,6 @@ inputNombre.addEventListener("input", function() {
   console.log(valor)
 });
 
-//evitar signos en el nombre
-/*const nombreTitular = document.getElementById("nombreTitular");
-const ltrSpace = /^[a-zA-Z\s]+$/;
-console.log(nombreTitular.value);
-
-nombreTitular.addEventListener('keyup', () => {
-  console.log("Entró!")
-  const nombTitu = nombreTitular.value;
-
-  if(!ltrSpace.test(nombTitu)){
-    const nombremenos =nombTitu.substring(0, nombTitu.Length -1);
-    nombreTitular.value = nombremenos;
-    //alert("Cuidado, solo debes ingresar tu nombre sin signos, ni números")
-    console.log(nombTitu);
-    return true;
-  }
-});*/
-
-
-
-
-/*document.getElementsByName("letras").onkeydown = function(){
-  console.log("Entró!")
-  const nombTitu = nombreTitular.value;
-
-  if(ltrSpace.test(nombTitu)){
-    alert("Cuidado, solo debes ingresar tu nombre sin signos, ni números")
-    console.log(nombTitu);
-    return true;
-  }
-}*/
 
 document.getElementById("btnValidar").onclick = function() {
 
@@ -72,31 +43,30 @@ document.getElementById("btnValidar").onclick = function() {
     alert ("¡SOLO debe poseer digitos de 0 a 9!");
     return false;
   }
-  
 
-  //Algoritmo de Luhn, isValid
+  //LLamando aaa Algoritmo de Luhn, isValid
   const resultado = validator.isValid(numeroTarjeta.value); 
-  
-  if(!resultado) {
-    alert("¡ALERTA!: Su tarjeta no ha sido validada");
-    return false;
-  }
-  console.log(resultado);
-
 
   //Maskify
   const maski = validator.maskify(numeroTarjeta.value);
-  if (resultado === true){
-    //se mostrara en formulario n° tarjeta el maskify
+  if (!resultado){// si NO ES igual a true, no sera valida
+
+    msjH1.innerHTML = "OH NOOOO!";
+    msj.innerHTML = "Tu tarjeta N° " + numeroTarj + " NO ES VALIDA";
+
+    //alerta a traves de modal
+    mnsjValidacion.classList.add('show');
+
+  }else{//Si es true, sera valida y se mostrara en formulario n° tarjeta el maskify
     //mensaje interno de modal
     msj.innerHTML = "Se verificó tu tarjeta N°" + maski;
 
     //alerta a traves de modal
     mnsjValidacion.classList.add('show');  
-
-  }else{alert('mensaje prueba '+ resultado)}
-
+  }
+  console.log(resultado);
 }
+
 //boton de modal
 close.addEventListener('click', () => {
   mnsjValidacion.classList.remove('show');

@@ -208,7 +208,6 @@ p{
     transition: opacity 0.3s ease;
   }
 /*Boton modal*/
-
 #btnCerrar{
     font-weight: 700;
     font-size: 18px;
@@ -246,7 +245,7 @@ p{
   
   .modal p {
     opacity: 0.7;
-    font-size: 14px;
+    font-size: 18px;
   }
 
 /*pie de pag*/
