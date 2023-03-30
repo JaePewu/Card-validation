@@ -15,22 +15,12 @@ const inputNombre = document.getElementById("nombreTitular");
 
 inputNombre.addEventListener("input", function() {
   console.log("entro")
-  const valor = this.value;
-  console.log(valor)
+  const valor = this.value;//this" es una palabra clave para referirse al objeto actual en el que se está ejecutando.
+  console.log(valor) //se refiere al elemento del DOM en el que se ha producido el evento "input" (es decir, el elemento con el id "nombreTitular").
   this.value = valor.replace(/[0-9]/g, "");
   console.log(valor)
 });
 
-/*function soloLetras(event){
-
-  const input = event.target.value;
-  const re = /^[a-zA-Z\s]+$/;
-  if(!re.test(input)){
-    event.preventDefault(); // Evita que el caracter se escriba en el campo
-    return false;
-  }
-  return true;
-}*/
 //evitar signos en el nombre
 /*const nombreTitular = document.getElementById("nombreTitular");
 const ltrSpace = /^[a-zA-Z\s]+$/;
@@ -86,8 +76,12 @@ document.getElementById("btnValidar").onclick = function() {
 
   //Algoritmo de Luhn, isValid
   const resultado = validator.isValid(numeroTarjeta.value); 
+  
+  if(!resultado) {
+    alert("¡ALERTA!: Su tarjeta no ha sido validada");
+    return false;
+  }
   console.log(resultado);
-
 
 
   //Maskify
