@@ -6,6 +6,7 @@
 
 * [Algoritmo de Luhn para Jae's Store](#Algoritmo-de-Luhn-para-Jae's-Store)
 * [Caracteristicas](#Caracteristicas)
+* [Sobre mi 🏵](#Sobre-mi-🏵)
 * [Qué es el Algoritmo de Luhn](#Qué-es-el-Algoritmo-de-Luhn)
 * [Cómo funciona el algoritmo de Luhn](#Cómo-funciona-el-algoritmo-de-Luhn)
 * [Cómo se utiliza el algoritmo en Jae's Store](#Cómo-se-utiliza-el-algoritmo-en-Jae's-Store)
@@ -22,7 +23,9 @@
 
 - Aplicación de algoritmo en una tienda.
 
+### Sobre mi 🏵
 
+Comenzando en el mundo de programación, primer proyecto implementando HTML, CSS y finalmente Javascript.
 
 ## Uso del Algoritmo
 

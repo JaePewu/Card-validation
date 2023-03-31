@@ -66,9 +66,7 @@ inputNombre.addEventListener("input", function() {
 
 //Validacion de numeros en CVV
 cvv.addEventListener("input", function() {
-  console.log("entro")
   const valor = this.value;
-  console.log(valor) 
   this.value = valor.replace(/[a-zA-Z\W_]/g, "");// Quita letras y signos
   console.log(valor)
 });
